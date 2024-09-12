@@ -23,8 +23,8 @@ Prof. Juan Chiachío Ruano
 - [1. Description](#1-description)
 - [2. Prerequisites](#2-prerequisites)
 - [3. Installation](#3-installation)
-- [4. Directory structure](#4-directory-structure)
-- [5. Establish paths: Steps for a New User to Set Up](#5-establish-paths-steps-for-a-new-user-to-set-up)
+- [4. Steps for a New User to Set Up](#4-steps-for-a-new-user-to-set-up)
+- [5. Directory structure](#5-directory-structure)
 - [6. SAP2000 considerations](#6-sap2000-considerations)
   - [6.1. OAPI Documentation](#61-oapi-documentation)
   - [6.2. SAP2000 Model](#62-sap2000-model)
@@ -76,19 +76,8 @@ python -m pip install --upgrade pip
 pip install requirements.txt
 ```
 
-## 4. Directory structure
 
-- doc: contains documentation
-- src: contains main codes:
-  - `BI_1_LAUNCHER.py`: Launches and manages the Bayesian Inference.
-  - `BI_2_function.py`: Contains functions used by `BI_1_LAUNCHER.py`.
-  - `EfI_1_steelframe_testbeam.py`: EfI algorithm for the steel frame and for a beam toy structure.
-  - `EfI_2_footbridge.py`: EfI algorithm for the footbridge.
-  - `OMA_1_generate_timehistory.py`: Generates time vibration strain time history data for the footbridge.
-- data: contains strain time data used in OMA.
-
-
-## 5. Establish paths: Steps for a New User to Set Up
+## 4. Steps for a New User to Set Up
 
 1. **Set Up the Environment Variables**:
    - You need to create a `.env` file where you will specify your username.
@@ -108,6 +97,21 @@ pip install requirements.txt
 
 4. **Running the Script**:
    - When the script runs, it will automatically read the username from the `.env` file and locate the corresponding CSV (e.g., `asanchezlc.csv`) to fetch the paths.
+
+
+## 5. Directory structure
+
+- doc: contains documentation
+- data: contains strain time data used in OMA.
+- src: contains the following files:
+  - `BI_1_LAUNCHER.py`: Launches and manages the Bayesian Inference.
+  - `BI_2_function.py`: Contains functions used by `BI_1_LAUNCHER.py`.
+  - `EfI_1_steelframe_testbeam.py`: EfI algorithm for the steel frame and for a beam toy structure.
+  - `EfI_2_footbridge.py`: EfI algorithm for the footbridge.
+  - `OMA_1_generate_timehistory.py`: Generates time vibration strain time history data for the footbridge.
+  - signals_for_oma: folder containing files for transforming the `.txt` of the time series data into `.uff` files to be read by Artemis.
+
+
 
 
 ## 6. SAP2000 considerations
