@@ -29,6 +29,7 @@ Prof. Juan Chiachío Ruano
   - [6.1. OAPI Documentation](#61-oapi-documentation)
   - [6.2. SAP2000 Model](#62-sap2000-model)
   - [6.3. Input data](#63-input-data)
+- [Disclaimer](#disclaimer)
 
 <!-- /TOC -->
 
@@ -52,7 +53,7 @@ In order to facilitate the use in a different pc, creating a virtual environment
 
 **Clone the repository locally:**
 ``` bash
-git clone https://github.com/asanchezlc/TFM_codes.git
+git clone https://github.com/asanchezlc/MasterEstructurasTFM_aslc.git
 ```
 
 **Create virtual environment**: go to the project directory to create the virtual environment 
@@ -102,13 +103,8 @@ pip install requirements.txt
    - The CSV should contain the necessary paths used by the script. - Ensure this file is stored in the expected directory (`src//paths`) as referenced by the code.
    
 3. **CSV Content**:
-   - Populate the CSV file with the paths the script will use. The paths can be directories, file paths, or any data relevant to the analysis.
-   - Each path should be in its own row in the CSV. For example:
-     ```csv
-     /path/to/data1
-     /path/to/data2
-     /path/to/output
-     ```
+   - Populate the CSV file with the paths the script will use, using `asanchezlc.csv` as a reference.
+ 
 
 4. **Running the Script**:
    - When the script runs, it will automatically read the username from the `.env` file and locate the corresponding CSV (e.g., `asanchezlc.csv`) to fetch the paths.
@@ -117,14 +113,14 @@ pip install requirements.txt
 ## 6. SAP2000 considerations
 
 - The program is tested with SAP2000 v23
-- The model used is stored in sap2000 folders
+
 
 ### 6.1. OAPI Documentation
 
 For using the OAPI, see CSI_OAPI_Documentation.chm file which is commonly on the same folder as the .exe file (in my case, C:\Program Files\Computers and Structures\SAP2000 23)
 
 ### 6.2. SAP2000 Model
-Within sap2000 folder, a .sdb file has been left. Following groups must be defined in that file:
+Within the `sap2000` folder, a multiple `.sdb` files has been provided. If you want to use a different model, make sure the following groups are defined in the new model:
 - allframes: contains all frames of the model
 - allpoints: contains all points of the model
 - modeshape_frames: contains frames to be used to retrieve strain mode shapes
@@ -135,3 +131,7 @@ Additionally, a dictionary with channel coordinates must be defined (channel_coo
 
 ### 6.3. Input data
 Input data is defined in a json (input_data.json), specifying material properties, spring characteristics and partial fixity & releases
+
+## Disclaimer
+
+This directory is a simplified version of the full project, containing only the main codes. If any files are missing, please contact [antonioluis@ugr.es](mailto:antonioluis@ugr.es).
