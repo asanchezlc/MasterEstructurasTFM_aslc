@@ -1,0 +1,42 @@
+# Input Filenames (variables must include "filename")
+sap2000_filename=uncalibrated.sdb                                   # sdb file in paths['project'] + 'src' + 'sap2000'
+measured_oma_filename=strain_modal_results_test14_8sg_EFDD.json     # json file in paths['oma_results']
+
+# Output Filenames (variables must include "filename")
+bi_output_filename=bayesian_inference_data.h5                       # (sometimes input) h5 file in paths['files_tfm_output'] + 'bayesian_inference'
+errors_filename=errors.txt                                          # txt file in paths['files_tfm_output'] + 'bayesian_inference'
+process_filename=process.txt                                        # txt file in paths['files_tfm_output'] + 'bayesian_inference'
+fem_parameters_filename=fem_modal_parameters.json                   # json file in paths['files_tfm_output'] + 'bayesian_inference'
+
+# Inference Parameter Intervals (None if the parameter is not inferred)
+E_interv=None                   # Interval for Young Modulus (N/m2)
+rho_interv=None                 # Interval for density (kg/m3)
+R1_interv=[0, 2*10**6]          # Interval for spring stiffness in direction 1 (y-bending; also influences torsional) for joints (N/m)
+R2_interv=[0, 10**6]            # Interval for spring stiffness in 2 (x-bending) direction for joints (N/m)
+T_interv=None                   # Interval for torsional frame partial fixity (N/m)
+M2_interv=[0, 2*10**6]          # Interval for y-bending (also influences torsional) frame partial fixity (N/m)
+M3_interv=[0, 10**6]            # Interval for x-bending 3 frame partial fixity (N/m)
+sigma_f_interv=[0.01, 0.3]      # Interval for frequency standard deviation
+w_interv=None                   # Interval for w, being: sigma_phi^2 = sigma_f^2 / w; None if not only frequencies are used
+
+# Initial Parameters (if specified and use_initial_parameters=True), the inference starts with these parameters
+E_ini=None                      # Initial value for Young Modulus
+rho_ini=None                    # Initial value for density (kg/m3)
+R1_ini=1650000                  # Initial value for spring stiffness in direction 1 (y-bending)
+R2_ini=500000                   # Initial value for spring stiffness in direction 2 (x-bending)
+T_ini=None                      # Initial value for torsional frame partial fixity
+M2_ini=780000                   # Initial value for y-bending
+M3_ini=25000                    # Initial value for x-bending 3 frame partial fixity (N/m)
+sigma_f_ini=0.1                 # Initial value for frequency standard deviation
+w_ini=None                      # Interval for w, being: sigma_phi^2 = sigma_f^2 / w
+
+# SAP2000 Model Parameters
+n_frames=None                   # If number is specified, there are multiple releaseframes group names
+n_joints=None                   # If number is specified, there are multiple jointsupport group names
+
+# Bayesian Inference Parameters
+niters=75000                   # Number of iterations
+proposal_stdev = 0.01          # The higher the lower acceptance ratio
+
+# Process Analysis
+jmp=2                           # Choose a larger natural value (<=5) for less frequent evaluations

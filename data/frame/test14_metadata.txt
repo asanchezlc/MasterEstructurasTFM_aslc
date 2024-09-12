@@ -1,0 +1,44 @@
+# SG Acquisition Data
+GF; 2.08
+Vs; 5
+GAIN; 128
+n_bits; 24
+
+# General Filter
+ch_to_delete;
+timestart_id; 1000
+timeend_id; 50000
+
+# Filter Data
+apply_outliers; 1
+prominence; 2000000
+threshold; 800000
+outliers_order; 12
+distance; 100000
+
+# Butterword Filter
+apply_butterworth; 1
+f_low; 0.25
+f_high; 36
+filter_order; 5
+
+# Detrend
+apply_detrend; 1
+
+# Decimation
+apply_decimate; 0
+decimation_factor;  
+
+# Additional Comments (from here, nothing is read in python)
+SE COLOCAN TODOS LOS TORNILLOS
+SE ELIMINA EL PILAR DAÑADO
+SE UTILIZAN 17 GALGAS, CORRESPONDIENTES A OSP_8_MODOS_10_CHANNELS, OSP_7_MODOS_10_CHANNELS Y OSP_6_MODOS_9_CHANNELS + 2 intuición ingenieril
+Test realizado con excitación con excitación a motor
+Se ha dotado al arduino mega con alimentación externa de 5V
+Excitación motor:
+stopTime = 7000 + random(10000);
+motorSpeed = 255;
+runTime = 20 + random(60);
+
+
+

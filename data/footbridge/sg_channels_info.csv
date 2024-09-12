@@ -1,0 +1,15 @@
+﻿Channel;x;y;z;SAP2000_id;SAP2000_dir
+1;6.0;2.8;0.0;8.0;up
+2;6.0;0.0;0.0;20.0;up
+3;-0.2802;2.8;0.0;317.9;up
+4;1.5;0.0;3.0;17.0;right
+5;2.85;0.0;0.300002;17.9;right
+6;15.0;0.0;0.0;147.0;right
+7;-0.1944;2.8;0.0;318.1;right
+8;15.1944;2.8;0.0;320.1;right
+9;7.5;0;0;244.0;up
+10;7.5;0;0;244.0;right
+11;7.5;2.8;3;116.0;up
+12;7.5;2.8;3;116.0;right
+13;6;0;0;20.0;right
+# See: C:\Users\Usuario\Documents\DOCTORADO_CODES\TFM_codes\src\EfI_data_footbridge\SG_location.csv; channels 9 to 13 are not optimal; so I have manually searched them;;;;;

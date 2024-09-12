@@ -1,0 +1,8 @@
+# Paths
+rawdata_strain; C:\Users\WindowsVM\Documents\DOCTORADO_CODES\ARDUINO\StrainGauge\ABMega\frame_records\oma
+rawdata_acc; C:\Users\WindowsVM\Documents\DOCTORADO_CODES\ARDUINO\AccelerometersEGMFrame\AZDelivery\frame_records\oma
+savefigures; C:\Users\WindowsVM\Documents\DOCTORADO\Python_Figures\TFM_StrainGauges\oma
+savedata; src\signals_for_oma\data
+rawdata_strain_simulated_oma; C:\Users\WindowsVM\Documents\DOCTORADO_CODES\ARDUINO\StrainGauge\ABMega\footbridge_simulated\oma
+savefigures_simulated_oma; C:\Users\WindowsVM\Documents\DOCTORADO\Python_Figures\TFM_StrainGauges\simulated_oma
+savedata_simulated_oma; src\signals_for_oma\data_simulated_oma

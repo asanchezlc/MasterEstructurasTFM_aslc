@@ -1,0 +1,361 @@
+{
+    "material": {
+        "frame-Steel": {
+            "E": 208700000000.0,
+            "u": 0.3,
+            "rho": 9330.8387
+        }
+    },
+    "joint_springs": {
+        "supportpoints": [
+            0,
+            0,
+            0,
+            97973.85,
+            20352.595,
+            0
+        ]
+    },
+    "frame_releases": {
+        "releaseframes_1": {
+            "ii": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "jj": [
+                false,
+                false,
+                false,
+                true,
+                true,
+                true
+            ],
+            "StartValue": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "EndValue": [
+                0,
+                0,
+                0,
+                39880000000.0,
+                292617.31,
+                251.56
+            ]
+        },
+        "releaseframes_2": {
+            "ii": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "jj": [
+                false,
+                false,
+                false,
+                true,
+                true,
+                true
+            ],
+            "StartValue": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "EndValue": [
+                0,
+                0,
+                0,
+                38290000000.0,
+                201.01,
+                3950.66
+            ]
+        },
+        "releaseframes_3": {
+            "ii": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "jj": [
+                false,
+                false,
+                false,
+                true,
+                true,
+                true
+            ],
+            "StartValue": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "EndValue": [
+                0,
+                0,
+                0,
+                12250000000.0,
+                176188.45,
+                1451.78
+            ]
+        },
+        "releaseframes_4": {
+            "ii": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "jj": [
+                false,
+                false,
+                false,
+                true,
+                true,
+                true
+            ],
+            "StartValue": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "EndValue": [
+                0,
+                0,
+                0,
+                24626695260.0,
+                336836.5,
+                7666.28
+            ]
+        },
+        "releaseframes_5": {
+            "ii": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "jj": [
+                false,
+                false,
+                false,
+                true,
+                true,
+                true
+            ],
+            "StartValue": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "EndValue": [
+                0,
+                0,
+                0,
+                38970000000.0,
+                4159.65,
+                2343.64
+            ]
+        },
+        "releaseframes_6": {
+            "ii": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "jj": [
+                false,
+                false,
+                false,
+                true,
+                true,
+                true
+            ],
+            "StartValue": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "EndValue": [
+                0,
+                0,
+                0,
+                31810000000.0,
+                329894.1,
+                6430.4
+            ]
+        },
+        "releaseframes_7": {
+            "ii": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "jj": [
+                false,
+                false,
+                false,
+                true,
+                true,
+                true
+            ],
+            "StartValue": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "EndValue": [
+                0,
+                0,
+                0,
+                39090000000.0,
+                272129.51,
+                7994.9
+            ]
+        },
+        "releaseframes_8": {
+            "ii": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "jj": [
+                false,
+                false,
+                false,
+                true,
+                true,
+                true
+            ],
+            "StartValue": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "EndValue": [
+                0,
+                0,
+                0,
+                20390000000.0,
+                276991.7,
+                3217.28
+            ]
+        },
+        "releaseframes_9": {
+            "ii": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "jj": [
+                false,
+                false,
+                false,
+                true,
+                true,
+                true
+            ],
+            "StartValue": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "EndValue": [
+                0,
+                0,
+                0,
+                23580000000.0,
+                162417.14,
+                847.8
+            ]
+        },
+        "releaseframes_10": {
+            "ii": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "jj": [
+                false,
+                false,
+                false,
+                true,
+                true,
+                true
+            ],
+            "StartValue": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "EndValue": [
+                0,
+                0,
+                0,
+                35480000000.0,
+                538.53,
+                7718.58
+            ]
+        }
+    }
+}
